@@ -13,18 +13,16 @@
         font-family: "Barlow", serif;
       }
       #header {
-        display: flex;
-        justify-content: space-between;
-        background-color: deepskyblue;
+        background-image: url("https://github.com/manduul69/Web-Programming-4/blob/main/images/image-header.jpg?raw=true");
+        background-size: cover;
         color: white;
-        align-items: flex;
         padding: 0px 30px 0px 30px;
-        height: 500px;
+        height: 1000px;
       }
       #links {
         display: flex;
+        align-items: center;
         gap: 15px;
-        padding: 0px 10px 0px 10px;
       }
       #book-btn {
         background-color: rgb(255, 255, 255);
@@ -39,76 +37,149 @@
         display: flex;
         align-items: start;
         font-family: "Fraunces", serif;
+        padding: 10px 30px 10px 30px;
       }
       .title {
         display: flex;
         align-items: center;
         justify-content: center;
         font-family: "Fraunces", serif;
-        .creative {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
+        font-size: 72px;
       }
       .boxes {
         display: flex;
         align-items: normal;
       }
+      #nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #box1-left {
+        padding: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .learn {
+        font-size: 10px;
+      }
+      #box1-container {
+        width: 50%;
+      }
+      #box2-right {
+        padding: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      #box2-container {
+        width: 50%;
+      }
+      #box3-left {
+        background-image: url("https://github.com/manduul69/Web-Programming-4/blob/main/images/image-graphic-design.jpg?raw=true");
+        background-size: cover;
+        padding: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      #box3-container1 {
+        width: 50%;
+      }
+      #box3-right {
+        background-image: url("https://github.com/manduul69/Web-Programming-4/blob/main/images/image-photography.jpg?raw=true");
+        background-size: cover;
+        padding: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      #box3-container2 {
+        width: 50%;
+      }
     </style>
   </head>
   <body>
     <div id="header">
-      <div id="head">
-        <p>sunnyside</p>
+      <div id="nav">
+        <div id="head">
+          <p>sunnyside</p>
+        </div>
+        <div id="links">
+          <p>About</p>
+          <p>Services</p>
+          <p>Projects</p>
+          <button id="book-btn">CONTACT</button>
+        </div>
       </div>
+
       <div>
-        <h1 class="title creative">WE ARE CREATIVES</h1>
-      </div>
-      <div id="links">
-        <p>About</p>
-        <p>Services</p>
-        <p>Projects</p>
-        <button id="book-btn">CONTACT</button>
+        <h1 class="title">WE ARE CREATIVES</h1>
       </div>
     </div>
+
     <div class="boxes box1">
-      <div>
-        <h1 class="title">Transform your brand</h1>
-        <p>
-          We are full-service creative agency specializing in helping brands
-          grow fast. Engage your clients through compelling visuals that do most
-          of the marketing for you.
-        </p>
-        <h3 class="title learn">LEARN MORE</h3>
+      <div id="box1-container">
+        <div id="box1-left">
+          <h1 class="title">Transform your brand</h1>
+          <p>
+            We are full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <h3 class="title learn">LEARN MORE</h3>
+        </div>
       </div>
-      <div>
-        <img src="" alt="" />
-      </div>
+
+      <img
+        src="https://github.com/manduul69/Web-Programming-4/blob/main/images/image-transform.jpg?raw=true"
+        style="width: 50%"
+        alt=""
+      />
     </div>
+
     <div class="boxes box2">
-      <div>
-        <img src="" alt="" />
-      </div>
-      <div>
-        <h1 class="title">Stand out to the right audience</h1>
+      <img
+        src="https://github.com/manduul69/Web-Programming-4/blob/main/images/image-stand-out.jpg?raw=true"
+        style="width: 50%"
+        alt=""
+      />
+      <div id="box2-container">
+        <div id="box2-right">
+          <h1 class="title">Stand out to the right audience</h1>
+          <p>
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we'll build and
+            extend your brand in digital places.
+          </p>
+          <h3 class="title learn">LEARN MORE</h3>
+        </div>
       </div>
     </div>
+
     <div class="boxes box3">
-      <div>
-        <div>
-          <img src="" alt="" />
-        </div>
-        <div>
+      <div id="box3-container1">
+        <div id="box3-left">
           <h1 class="title">Graphic Design</h1>
+          <p>
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential client'
+            attention.
+          </p>
         </div>
       </div>
-      <div>
-        <div>
-          <img src="" alt="" />
-        </div>
-        <div>
+      <div id="box3-container2">
+        <div id="box3-right">
           <h1 class="title">Photography</h1>
+          <p>
+            Increase your credibility by getting the most stunning, high-
+            quality photos that improve your business image.
+          </p>
         </div>
       </div>
     </div>
